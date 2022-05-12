@@ -72,7 +72,7 @@ public class Deque1<Item> implements Iterable<Item> {
         Item temp = rear.data;
         rear = rear.prev;
         size--;
-        return temp;
+        return temp; 
     }
 
     // return an iterator over items in order from front to back
