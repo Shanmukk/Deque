@@ -19,7 +19,7 @@ public class DequeArray < Item > implements Iterable < Item > {
         }
 
         public int size() {
-            //return size;
+            return size;
         }
 
         // resize the underlying array
