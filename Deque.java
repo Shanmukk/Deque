@@ -41,20 +41,20 @@ public class Deque<Item> implements Iterable<Item> {
     }
     // add the item to the back
     public void addLast(Item item){
-        // if (item == null){
-        //     throw new IllegalArgumentException();
-        // }else{
-        //     Node newNode = new Node();
-        //     newNode.data = item;
-        //     if (rear == null)
-        //         front = rear = newNode;
-        //     else{
-        //         newNode.prev = rear;
-        //         //rear.next = newNode;
-        //         rear = newNode;
-        //     }
-        //     size++;
-        // }
+        if (item == null){
+            throw new IllegalArgumentException();
+        }else{
+            Node newNode = new Node();
+            newNode.data = item;
+            if (rear == null)
+                front = rear = newNode;
+            else{
+                newNode.prev = rear;
+                //rear.next = newNode;
+                rear = newNode;
+            }
+            size++;
+        }
     }
 
     // remove and return the item from the front
