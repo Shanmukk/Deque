@@ -66,15 +66,15 @@ public class DequeArray < Item > implements Iterable < Item > {
         }
 
         public Item removeLast() {
-            // if (isEmpty()) throw new NoSuchElementException("Queue underflow");
-            // Item item = arr[rear];
-            // while (item == null){
-            //     item = arr[rear--];
-            // }
-            // size--;
-            // // shrink size of array if necessary
-            // if (size > 0 && size == arr.length / 4) resize(arr.length / 2);
-            // return item;
+            if (isEmpty()) throw new NoSuchElementException("Queue underflow");
+            Item item = arr[rear];
+            while (item == null){
+                item = arr[rear--];
+            }
+            size--;
+            // shrink size of array if necessary
+            if (size > 0 && size == arr.length / 4) resize(arr.length / 2);
+            return item;
         }
 
         public Iterator < Item > iterator() {
