@@ -53,16 +53,16 @@ public class DequeArray < Item > implements Iterable < Item > {
         }
 
         public Item removeFirst() {
-            // if (isEmpty()) throw new NoSuchElementException("Queue underflow");
-            // Item temp = arr[first];
-            // arr[first] = null; // to avoid loitering
-            // size--;
-            // first++;
-            // //rear--;
-            // if (first == arr.length) first = 0; // wrap-around
-            // // shrink size of array if necessary
-            // if (size > 0 && size == arr.length / 4) resize(arr.length / 2);
-            // return temp;
+            if (isEmpty()) throw new NoSuchElementException("Queue underflow");
+            Item temp = arr[first];
+            arr[first] = null; // to avoid loitering
+            size--;
+            first++;
+            //rear--;
+            if (first == arr.length) first = 0; // wrap-around
+            // shrink size of array if necessary
+            if (size > 0 && size == arr.length / 4) resize(arr.length / 2);
+            return temp;
         }
 
         public Item removeLast() {
