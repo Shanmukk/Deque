@@ -62,7 +62,7 @@ public class DequeArray < Item > implements Iterable < Item > {
             if (first == arr.length) first = 0; // wrap-around
             // shrink size of array if necessary
             if (size > 0 && size == arr.length / 4) resize(arr.length / 2);
-            return temp;
+            return temp; 
         }
 
         public Item removeLast() {
