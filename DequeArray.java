@@ -46,10 +46,10 @@ public class DequeArray < Item > implements Iterable < Item > {
         }
 
         public void addLast(Item item) {
-            // if (size == arr.length) resize(2 * arr.length); // double size of array if necessary
-            // arr[rear++] = item; // add item
-            // if (rear == arr.length) rear = 0; // wrap-around
-            // size++;
+            if (size == arr.length) resize(2 * arr.length); // double size of array if necessary
+            arr[rear++] = item; // add item
+            if (rear == arr.length) rear = 0; // wrap-around
+            size++;
         }
 
         public Item removeFirst() {
