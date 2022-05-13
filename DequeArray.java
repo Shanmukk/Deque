@@ -58,7 +58,7 @@ public class DequeArray < Item > implements Iterable < Item > {
             arr[first] = null; // to avoid loitering
             size--;
             first++;
-            rear--;
+            //rear--;
             if (first == arr.length) first = 0; // wrap-around
             // shrink size of array if necessary
             if (size > 0 && size == arr.length / 4) resize(arr.length / 2);
