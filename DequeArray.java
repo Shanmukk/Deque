@@ -97,22 +97,22 @@ public class DequeArray < Item > implements Iterable < Item > {
             }
         }
         public static void main(String[] args) {
-            // Scanner scan = new Scanner(System.in);
-        //     DequeArray dq = new DequeArray();
-        //     dq.addFirst(11);
-        //     dq.addLast(12);
-        //     dq.addFirst(13);
-        //     dq.addLast(14);
-        //     dq.addFirst(15);
-        //     dq.addLast(16);
-        //     System.out.println(Arrays.toString(dq.arr));
-        //     System.out.println(dq.size());
-        //     System.out.println(dq.removeFirst());
-        //     System.out.println(dq.removeLast());
-        //     System.out.println(dq.removeFirst());
-        //     System.out.println(dq.removeLast());
-        //     System.out.println(dq.removeFirst());
-        //     System.out.println(dq.removeLast());
-        //     System.out.print(dq.size());
-        // }
+            Scanner scan = new Scanner(System.in);
+            DequeArray dq = new DequeArray();
+            dq.addFirst(11);
+            dq.addLast(12);
+            dq.addFirst(13);
+            dq.addLast(14);
+            dq.addFirst(15);
+            dq.addLast(16);
+            System.out.println(Arrays.toString(dq.arr));
+            System.out.println(dq.size());
+            System.out.println(dq.removeFirst());
+            System.out.println(dq.removeLast());
+            System.out.println(dq.removeFirst());
+            System.out.println(dq.removeLast());
+            System.out.println(dq.removeFirst());
+            System.out.println(dq.removeLast());
+            System.out.print(dq.size());
+        }
     }
