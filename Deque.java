@@ -100,19 +100,19 @@ public class Deque<Item> implements Iterable<Item> {
 
     // unit testing (required)
     public static void main(String[] args){
-        // Deque dq = new Deque();
-        // System.out.println(dq.isEmpty());
-        // dq.addFirst(55);
-        // dq.addFirst(34);
-        // dq.addLast(44);
-        // System.out.println(dq.isEmpty());
-        // System.out.println(dq.size());
-        // System.out.println(dq.removeLast());
-        // System.out.println(dq.removeFirst());
-        // System.out.println(dq.size());
-        // System.out.println(dq.removeLast());
-        // System.out.println(dq.removeFirst());
-        // System.out.println(dq.isEmpty());
+        Deque dq = new Deque();
+        System.out.println(dq.isEmpty());
+        dq.addFirst(55);
+        dq.addFirst(34);
+        dq.addLast(44);
+        System.out.println(dq.isEmpty());
+        System.out.println(dq.size());
+        System.out.println(dq.removeLast());
+        System.out.println(dq.removeFirst());
+        System.out.println(dq.size());
+        System.out.println(dq.removeLast());
+        System.out.println(dq.removeFirst());
+        System.out.println(dq.isEmpty());
 
     }
 
